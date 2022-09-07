@@ -7,59 +7,55 @@
 
 import Foundation
 
-struct PlaylistModel: Decodable {
+//MARK: - PlaylistModel
+struct PlaylistModel: Codable {
     let kind: String
     let etag: String
     let nextPageToken: String
     let pageInfo: PageInfo
-    let items: [Items]
+    let items: [ItemPlaylistResponse]
 }
 
-struct PageInfo: Decodable {
-    let totalResults: Int
-    let resultsPerPage: Int
-}
-
-struct Items: Decodable {
+//MARK: - ItemPlaylistResponse
+struct ItemPlaylistResponse: Codable {
     let kind: String
     let etag: String
     let id: String
-    let snippet: Snippet
-    let contentDetails: ContentDetails
+    let snippet: SnippetPlaylistResponse
+    let contentDetails: ContentDetailsPlaylistResponse
 }
 
-struct Snippet: Decodable {
+//MARK: - SnippetPlaylistResponse
+struct SnippetPlaylistResponse: Codable {
     let publishedAt: String
     let channelId: String
     let title: String
     let description: String
-    let thumbnails: Thumbnails
+    let thumbnails: ThumbnailsPlaylistResponse
     let channelTitle: String
     let localized: Localized
 }
 
-struct ContentDetails: Decodable {
+//MARK: - ContentDetailsPlaylistResponse
+struct ContentDetailsPlaylistResponse: Codable {
     let itemCount: Int
 }
 
-struct Thumbnails: Decodable {
+//MARK: - ThumbnailsPlaylistResponse
+struct ThumbnailsPlaylistResponse: Codable {
     let medium: Medium
     let high: High
 }
 
-struct Localized: Decodable {
-    let title: String
-    let description: String
-}
-
-
-struct Medium: Decodable {
+//MARK: - Medium
+struct Medium: Codable {
     let url: String
     let width: Int
     let height: Int
 }
 
-struct High: Decodable {
+//MARK: - High
+struct High: Codable {
     let url: String
     let width: Int
     let height: Int
