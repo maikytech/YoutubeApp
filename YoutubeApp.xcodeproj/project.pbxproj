@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		983C4A8628C90B6C00901EB6 /* PlaylistModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 983C4A8528C90B6C00901EB6 /* PlaylistModel.swift */; };
 		98417B7C2893218E007CF7A5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98417B7B2893218E007CF7A5 /* AppDelegate.swift */; };
 		98417B7E2893218E007CF7A5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98417B7D2893218E007CF7A5 /* SceneDelegate.swift */; };
 		98417B802893218E007CF7A5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98417B7F2893218E007CF7A5 /* ViewController.swift */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		983C4A8528C90B6C00901EB6 /* PlaylistModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaylistModel.swift; sourceTree = "<group>"; };
 		98417B782893218E007CF7A5 /* YoutubeApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YoutubeApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		98417B7B2893218E007CF7A5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		98417B7D2893218E007CF7A5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -37,6 +39,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		983C4A8428C90B4A00901EB6 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				983C4A8528C90B6C00901EB6 /* PlaylistModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		98417B6F2893218E007CF7A5 = {
 			isa = PBXGroup;
 			children = (
@@ -56,6 +66,7 @@
 		98417B7A2893218E007CF7A5 /* YoutubeApp */ = {
 			isa = PBXGroup;
 			children = (
+				983C4A8428C90B4A00901EB6 /* Models */,
 				98417B7B2893218E007CF7A5 /* AppDelegate.swift */,
 				98417B7D2893218E007CF7A5 /* SceneDelegate.swift */,
 				98417B7F2893218E007CF7A5 /* ViewController.swift */,
@@ -139,6 +150,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				98417B802893218E007CF7A5 /* ViewController.swift in Sources */,
+				983C4A8628C90B6C00901EB6 /* PlaylistModel.swift in Sources */,
 				98417B7C2893218E007CF7A5 /* AppDelegate.swift in Sources */,
 				98417B7E2893218E007CF7A5 /* SceneDelegate.swift in Sources */,
 			);
