@@ -8,7 +8,7 @@
 import Foundation
 
 //MARK: - PlaylistModel
-struct PlaylistModel: Codable {
+struct PlaylistModel: Decodable {
     let kind: String
     let etag: String
     let nextPageToken: String
@@ -17,7 +17,7 @@ struct PlaylistModel: Codable {
 }
 
 //MARK: - ItemPlaylistResponse
-struct ItemPlaylistResponse: Codable {
+struct ItemPlaylistResponse: Decodable {
     let kind: String
     let etag: String
     let id: String
@@ -26,7 +26,7 @@ struct ItemPlaylistResponse: Codable {
 }
 
 //MARK: - SnippetPlaylistResponse
-struct SnippetPlaylistResponse: Codable {
+struct SnippetPlaylistResponse: Decodable {
     let publishedAt: String
     let channelId: String
     let title: String
@@ -37,25 +37,25 @@ struct SnippetPlaylistResponse: Codable {
 }
 
 //MARK: - ContentDetailsPlaylistResponse
-struct ContentDetailsPlaylistResponse: Codable {
+struct ContentDetailsPlaylistResponse: Decodable {
     let itemCount: Int
 }
 
 //MARK: - ThumbnailsPlaylistResponse
-struct ThumbnailsPlaylistResponse: Codable {
+struct ThumbnailsPlaylistResponse: Decodable {
     let medium: Medium
     let high: High
 }
 
 //MARK: - Medium
-struct Medium: Codable {
+struct Medium: Decodable {
     let url: String
     let width: Int
     let height: Int
 }
 
 //MARK: - High
-struct High: Codable {
+struct High: Decodable {
     let url: String
     let width: Int
     let height: Int

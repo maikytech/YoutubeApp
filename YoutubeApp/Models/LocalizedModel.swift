@@ -8,11 +8,12 @@
 import Foundation
 
 // MARK: - Localized
-struct Localized: Codable {
-    let title, localizedDescription: String
+struct Localized: Decodable {
+    let title: String
+    let description: String
 
     enum CodingKeys: String, CodingKey {
         case title
-        case localizedDescription = "description"
+        case description
     }
 }

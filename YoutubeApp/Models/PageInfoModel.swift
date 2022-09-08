@@ -8,7 +8,7 @@
 import Foundation
 
 //MARK: - PageInfo
-struct PageInfo: Codable {
+struct PageInfo: Decodable {
     let totalResults: Int
     let resultsPerPage: Int
 }
