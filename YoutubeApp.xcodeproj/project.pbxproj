@@ -17,6 +17,8 @@
 		985D13C028C956A3001DBDB3 /* VideoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 985D13BF28C956A3001DBDB3 /* VideoModel.swift */; };
 		985D13C228C95A35001DBDB3 /* PageInfoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 985D13C128C95A35001DBDB3 /* PageInfoModel.swift */; };
 		985D13C628C95CAA001DBDB3 /* LocalizedModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 985D13C528C95CAA001DBDB3 /* LocalizedModel.swift */; };
+		985D13C928C971CA001DBDB3 /* RootPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 985D13C828C971CA001DBDB3 /* RootPageViewController.swift */; };
+		985D13CB28C9733C001DBDB3 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 985D13CA28C9733C001DBDB3 /* MainViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +34,8 @@
 		985D13BF28C956A3001DBDB3 /* VideoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoModel.swift; sourceTree = "<group>"; };
 		985D13C128C95A35001DBDB3 /* PageInfoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageInfoModel.swift; sourceTree = "<group>"; };
 		985D13C528C95CAA001DBDB3 /* LocalizedModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalizedModel.swift; sourceTree = "<group>"; };
+		985D13C828C971CA001DBDB3 /* RootPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootPageViewController.swift; sourceTree = "<group>"; };
+		985D13CA28C9733C001DBDB3 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +79,7 @@
 		98417B7A2893218E007CF7A5 /* YoutubeApp */ = {
 			isa = PBXGroup;
 			children = (
+				985D13C728C97188001DBDB3 /* Main */,
 				983C4A8428C90B4A00901EB6 /* Models */,
 				98417B7B2893218E007CF7A5 /* AppDelegate.swift */,
 				98417B7D2893218E007CF7A5 /* SceneDelegate.swift */,
@@ -85,6 +90,15 @@
 				98417B8928932193007CF7A5 /* Info.plist */,
 			);
 			path = YoutubeApp;
+			sourceTree = "<group>";
+		};
+		985D13C728C97188001DBDB3 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				985D13C828C971CA001DBDB3 /* RootPageViewController.swift */,
+				985D13CA28C9733C001DBDB3 /* MainViewController.swift */,
+			);
+			path = Main;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -164,7 +178,9 @@
 				98417B7C2893218E007CF7A5 /* AppDelegate.swift in Sources */,
 				985D13C028C956A3001DBDB3 /* VideoModel.swift in Sources */,
 				985D13C628C95CAA001DBDB3 /* LocalizedModel.swift in Sources */,
+				985D13CB28C9733C001DBDB3 /* MainViewController.swift in Sources */,
 				98417B7E2893218E007CF7A5 /* SceneDelegate.swift in Sources */,
+				985D13C928C971CA001DBDB3 /* RootPageViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
